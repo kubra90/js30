@@ -36,7 +36,7 @@
       filter: blur(var(--blur));
     }
 
-    .h1 {
+    .hl {
       color: var(--base);
     }
 
@@ -63,6 +63,16 @@
   </style>
 
   <script>
+
+// queryselector result in node list 
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate() {
+      console.log(this.value);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate))
+    inputs.forEach(input => input.addEventListener('mouseover', handleUpdate));
   </script>
 
 </body>
