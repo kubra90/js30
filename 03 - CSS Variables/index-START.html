@@ -23,6 +23,23 @@
 
   <style>
 
+/* define variables inside of root and then use them within the js */
+    :root {
+      --base : red;
+      --spacing: 10px;
+      --blur : 10px;
+    }
+
+    img {
+      padding : var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .h1 {
+      color: var(--base);
+    }
+
     /*
       misc styles, nothing to do with CSS variables
     */
