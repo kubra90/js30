@@ -62,9 +62,13 @@
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
+    //we need to add '0' to inside of paranthesis bc of that when we run this code, total is undefined.
+      //by doing that we define the total.  
     const totalYears = inventors.reduce((acc, inventor) => {
       return acc + (inventor.passed - inventor.year)
-    }, 0);
+      }, 0);
+
+    console.log(totalYears);
 
     // 5. Sort the inventors by years lived
 
